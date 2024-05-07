@@ -1,0 +1,157 @@
+:root {
+    --container-color-1: #fc8451ee;
+    --container-color-2: #FF9B71;
+    --highlight-color: #5C7457;
+    --font-color: #13262F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    color: var(--font-color);
+
+    /* GRID */
+    display: grid;
+    grid-template-columns: 260px 1fr;
+}
+
+#containerAside {
+    background-color: var(--container-color-1);
+    grid-column: 1 / 1;
+    padding: 1.2em;
+}
+
+#containerAside h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#containerAside img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.highlight {
+    color: var(--highlight-color);
+    font-weight: 500;
+    font-style: normal;
+}
+
+.welcomeTitle {
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    border-bottom: 1px solid var(--font-color);
+}
+
+.socialMedia a ion-icon {
+    width: 30px;
+    height: 30px;
+    color: var(--highlight-color);
+}
+
+#mailbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#mailbox a {
+    text-decoration: none;
+    font-size: .9em;
+    color: var(--highlight-color);
+}
+
+#containerMain {
+    grid-template-columns: 2 / -1;
+    background-color: var(--container-color-2);
+    padding: 2.4em;
+    text-align: left;
+}
+
+.userDescription {
+    border-bottom: 1px solid var(--font-color);
+}
+
+.userDescription h1{
+    font-size: 2em;
+}
+
+.userDescription h2 {
+    color: var(--highlight-color);
+    font-size: 1.5em;
+}
+
+.containerMain-text {
+    font-size: 1.1em;
+}
+
+.linkProjects {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--font-color);
+    background-color: var(--highlight-color);
+    padding: .7em;
+    border-radius: 4px;
+    font-weight: 700;
+
+    /* FLEX */
+    display: flex;
+    align-items: center;
+    gap: .4em;
+    width: fit-content;
+}
+
+.linkProjects:hover {
+    background-color: var(--font-color);
+    color: var(--highlight-color);
+}
+
+.userSkills h2 {
+    font-size: 1.5em;
+}
+
+.userSkills h3 {
+    font-size: 1.3em;
+}
+
+.containerSkills {
+    display: flex;
+    justify-content: space-around;
+    gap: 4em;
+}
+
+.containerSkills h4 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-left: 3px solid var(--font-color);
+}
+
+.skills {
+    border: 1px solid var(--font-color);
+}
+
+.skills i {
+    font-size: 3.6em;
+}
