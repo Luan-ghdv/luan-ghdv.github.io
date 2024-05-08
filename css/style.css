@@ -1,13 +1,20 @@
 :root {
+    /* CORES */
     --container-color-1: #fc8451ee;
     --container-color-2: #FF9B71;
     --highlight-color: #5C7457;
     --font-color: #13262F;
+
+    /* ESPAÇOS */
+    --sp-small: .4em;
+    --sp-medium: .8em;
+    --sp-big: 1.6em;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -29,6 +36,8 @@ body {
 #containerAside h2 {
     text-align: center;
     font-size: 1.5em;
+    padding: var(--sp-small) 0;
+
 }
 
 #containerAside img {
@@ -37,9 +46,10 @@ body {
     border-radius: 50%;
     display: block;
     margin: auto;
+    padding-bottom: var(--sp-small);
 }
 
-.text {
+.containerAside-text  {
     text-align: center;
     font-size: 1.1em;
 }
@@ -54,6 +64,7 @@ body {
     font-weight: 700;
     font-style: normal;
     text-align: center;
+    padding: var(--sp-medium) 0;
 }
 
 .socialMedia {
@@ -62,6 +73,7 @@ body {
     justify-content: center;
     list-style-type: none;
     border-bottom: 1px solid var(--font-color);
+    padding-bottom: var(--sp-small);
 }
 
 .socialMedia a ion-icon {
@@ -70,17 +82,28 @@ body {
     color: var(--highlight-color);
 }
 
+.socialMedia a ion-icon:hover {
+    color: var(--font-color);
+}
+
 #mailbox {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: var(--sp-small) 0;
+    font-weight: 700;
+    gap: var(--sp-small);
 }
 
 #mailbox a {
     text-decoration: none;
     font-size: .9em;
     color: var(--highlight-color);
+}
+
+#mailbox a:hover {
+    color: var(--font-color);
 }
 
 #containerMain {
@@ -101,10 +124,12 @@ body {
 .userDescription h2 {
     color: var(--highlight-color);
     font-size: 1.5em;
+    padding-bottom: var(--sp-medium);
 }
 
 .containerMain-text {
     font-size: 1.1em;
+    padding-bottom: var(--sp-medium);
 }
 
 .linkProjects {
@@ -115,6 +140,7 @@ body {
     padding: .7em;
     border-radius: 4px;
     font-weight: 700;
+    margin-bottom: var(--sp-medium);
 
     /* FLEX */
     display: flex;
@@ -128,30 +154,71 @@ body {
     color: var(--highlight-color);
 }
 
-.userSkills h2 {
+#userSkills h2 {
     font-size: 1.5em;
+    padding-top: var(--sp-small);
+    padding-bottom: var(--sp-small);
 }
 
-.userSkills h3 {
+#userSkills h3 {
     font-size: 1.3em;
+    padding-bottom: var(--sp-medium);
 }
 
 .containerSkills {
     display: flex;
     justify-content: space-around;
-    gap: 4em;
+
+    /* GRID */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "frontEnd backEnd devOps"
+        "frameworkFront frameworkBack ferramentas"
+    ;
+    gap: 3em;
+}
+
+#frontEnd {
+    grid-area: frontEnd;
+}
+
+#backEnd {
+    grid-area: backEnd;
+}
+
+#devOps {
+    grid-area: devOps;
+}
+
+#frameworkFront {
+    grid-area: frameworkFront;
+}
+
+#frameworkBack {
+    grid-area: frameworkBack;
+}
+
+#ferramentas {
+    grid-area: ferramentas;
 }
 
 .containerSkills h4 {
     font-size: 1.2em;
     text-transform: uppercase;
-    border-left: 3px solid var(--font-color);
+    border-left: 3px solid var(--highlight-color);
+    margin-bottom: .8em;
+    padding-left: var(--sp-small);
 }
 
-.skills {
-    border: 1px solid var(--font-color);
+.skillsBox {
+    margin-top: .8em;
+    display: flex;
+    gap: .5em;
+    flex-wrap: wrap;
 }
 
 .skills i {
-    font-size: 3.6em;
+    font-size: 3em;
 }

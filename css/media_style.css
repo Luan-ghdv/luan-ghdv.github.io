@@ -1,0 +1,16 @@
+@media (max-width: 900px) {
+    body {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .text {
+        line-height: 1.6;
+    }
+
+    .containerSkills {
+        display: flex;
+        flex-direction: column;
+    }
+}

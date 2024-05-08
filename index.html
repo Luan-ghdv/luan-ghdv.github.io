@@ -12,12 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_style.css">
 </head>
 <body>
     <aside id="containerAside">
-        <h2 class="linkHigh">Matheus Luan do Amaral Souza</h2>
+        <h2>Matheus Luan do Amaral Souza</h2>
         <img src="img/IMG_20200828_103425.jpg" alt="Foto de Matheus Luan">
-        <p class="text">Olá, Meu nome é Matheus e sou estudante de ciência da computação e almejo me tornar um <span class="highlight">desenvolvedor Full Stack</span>.</p>
+        <p class="containerAside-text text">Olá, Meu nome é Matheus e sou estudante de ciência da computação e almejo me tornar um <span class="highlight">desenvolvedor Full Stack</span>.</p>
 
         <p class="welcomeTitle">Seja bem-vindo!</p>
 
@@ -38,7 +39,7 @@
             <h1>Matheus Luan do Amaral Souza</h1>
             <h2>Desenvolvedor Full Stack</h2>
 
-            <p class="containerMain-text">
+            <p class="containerMain-text text">
                 Estudante de Ciência da Computação na Faculdade Descomplica, estou no 4º período e meu objetivo é me tornar um desenvolvedor <span>Full Stack</span>. Com dedicação e foco, estou mergulhando nas nuances do desenvolvimento de software, buscando dominar o <span>Front-end</span>, <span>Back-end</span> e <span>DevOps</span>.
             </p>
 
@@ -51,39 +52,52 @@
             <h3>Conheça as tecnologias que domino:</h3>
 
             <div class="containerSkills">
-                <div class="skills">
+                <div class="skills" id="frontEnd">
                     <h4>Front-end</h4>
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
+                    <div class="skillsBox">
+                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-css3-plain colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                    </div>
                 </div>
 
-                <div class="skills">
+                <div class="skills" id="backEnd">
                     <h4>Back-end</h4>
-                    <i class="devicon-postgresql-plain colored"></i>
-                    <i class="devicon-nodejs-plain-wordmark colored"></i>
+                    <div class="skillsBox">
+                        <i class="devicon-postgresql-plain colored"></i>
+                        <i class="devicon-nodejs-plain-wordmark colored"></i>
+                    </div>
                 </div>
 
-                <div class="skills">
+                <div class="skills" id="devOps">
                     <h4>DevOps</h4>
-                    <i class="devicon-linux-plain colored"></i>
-                    <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                    <div class="skillsBox">
+                        <i class="devicon-linux-plain colored"></i>
+                        <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                    </div>
                 </div>
 
-                <div class="skills">
+                <div class="skills" id="frameworkFront">
                     <h4>Frameworks Front-end</h4>
+                    <div class="skillsBox">
+
+                    </div>
                 </div>
 
-                <div class="skills">
+                <div class="skills" id="frameworkBack">
                     <h4>Frameworks Back-end</h4>
-                    <i class="devicon-express-original-wordmark colored"></i>
+                    <div class="skillsBox">
+                        <i class="devicon-express-original-wordmark colored"></i>
+                    </div>
                 </div>
 
-                <div class="skills">
+                <div class="skills" id="ferramentas">
                     <h4>Ferramentas</h4>
-                    <i class="devicon-git-plain colored"></i>
-                    <i class="devicon-github-original-wordmark colored"></i>
-                    <i class="devicon-npm-original-wordmark colored"></i>
+                    <div class="skillsBox">
+                        <i class="devicon-git-plain colored"></i>
+                        <i class="devicon-github-original-wordmark colored"></i>
+                        <i class="devicon-npm-original-wordmark colored"></i>
+                    </div>
                 </div>
             </div>
         </section>
