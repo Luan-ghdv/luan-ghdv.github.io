@@ -219,6 +219,11 @@ body {
     flex-wrap: wrap;
 }
 
+.skills abbr {
+    text-decoration: none;
+}
+
 .skills i {
     font-size: 3em;
+    color: var(--highlight-color);
 }
