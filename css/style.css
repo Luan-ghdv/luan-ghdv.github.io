@@ -160,11 +160,6 @@ body {
     padding-bottom: var(--sp-small);
 }
 
-#userSkills h3 {
-    font-size: 1.3em;
-    padding-bottom: var(--sp-medium);
-}
-
 .containerSkills {
     display: flex;
     justify-content: space-around;
